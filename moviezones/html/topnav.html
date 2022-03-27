@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<script>
+function movieFilterChanged() {
+	alert('changed');
+}
+
+</script>
+</head>
+
+<body>
+<div>
+<div class='topnav'>
+<label for='director'>Search by Director:</label><br>
+<select name='director' id='id_director' onchange='movieFilterChanged();'>
+  <option value="all">Select all</option>
+  <option value="david lean">David Lean</option>
+</select>
+</div>
+
+<div class='topnav'>
+<label for='actor'>Search by Actor:</label><br>
+<select name='actor' id='id_actor' onchange='movieFilterChanged();'>
+  <option value="all">Select all</option>
+  <option value="kristen stewart">Kristen Stewart</option>
+</select>
+</div>
+
+<div class='topnav'>
+<label for='genre'>Search by Genre:</label><br>
+<select name='genre' id='id_genre' onchange='movieFilterChanged();'>
+  <option value="all">Select all</option>
+  <option value="action">Action</option>
+</select>
+</div>
+
+</div>
+</body>
+</html>
